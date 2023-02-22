@@ -4,31 +4,61 @@ body {
 }
 a {
   color: #f3eaea;
+  transition: all 500ms;
+}
+.menu-links:hover {
+  cursor: pointer;
+  font-size: 180%;
+  font-size-adjust: 5%;
 }
 h1 {
   font-family: Gloock;
-  font-size: 125px;
+  font-size: 145px;
   letter-spacing: 10px;
   text-transform: capitalize;
   position: absolute;
-  top: -7%;
-  left: 24%;
+  top: -12%;
+  left: 30%;
 }
+h2,
+ul,
+p {
+  font-family: Montserrat;
+}
+h2 {
+  font-size: 46px;
+}
+ul {
+  list-style: none;
+}
+
 .container {
   width: 100vw;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+  margin: 10px;
 }
 .image-container {
   width: 80%;
-  padding-top: 10%;
+  padding: 20px 0px 20px 80px;
 }
+
 .menu {
   font-family: Montserrat;
   letter-spacing: 2px;
   text-transform: lowercase;
   width: 20%;
+  font-size: 36px;
 }
 .page-links {
   width: 100%;
   display: flex;
+}
+.year {
+  font-size: 26px;
+}
+.content-info {
+  margin: 10px 40px;
 }
