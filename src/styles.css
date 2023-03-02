@@ -48,7 +48,22 @@ img {
   padding: 20px 0px 20px 90px;
   position: relative;
 }
-
+.collab-container {
+  display: block;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
 .menu {
   font-family: Montserrat;
   letter-spacing: 2px;
@@ -127,4 +142,38 @@ img {
 }
 .overlay {
   text-align: center;
+}
+.collapsible {
+  font-family: Montserrat;
+  background-color: #135d6049;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 26px;
+}
+.active,
+.collapsible:hover {
+  background-color: #ffffff92;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #07383a;
+}
+.collapsible:after {
+  content: "\02795";
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
 }
