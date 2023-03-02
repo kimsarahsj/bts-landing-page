@@ -1,11 +1,11 @@
-// Get the button:
-let mybutton = document.getElementById("topButton");
+// Go to Top
+let mybutton = document.getElementById("toTopButton");
 
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
   scrollFunction();
 };
 
+//Scroll to Top
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
@@ -14,141 +14,141 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
-
-var ml4 = {};
-ml4.opacityIn = [0, 1];
-ml4.scaleIn = [0.2, 1];
-ml4.scaleOut = 3;
-ml4.durationIn = 600;
-ml4.durationOut = 500;
-ml4.delay = 300;
+//Member Name Animation
+let animate = {};
+animate.opacityIn = [0, 1];
+animate.scaleIn = [0.2, 1];
+animate.scaleOut = 3;
+animate.durationIn = 600;
+animate.durationOut = 500;
+animate.delay = 300;
 
 anime
   .timeline({ loop: true })
   .add({
-    targets: ".ml4 .member-1",
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn,
+    targets: ".animate .member-1",
+    opacity: animate.opacityIn,
+    scale: animate.scaleIn,
+    duration: animate.durationIn,
   })
   .add({
-    targets: ".ml4 .member-1",
+    targets: ".animate .member-1",
     opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
+    scale: animate.scaleOut,
+    duration: animate.durationOut,
     easing: "easeInExpo",
-    delay: ml4.delay,
+    delay: animate.delay,
   })
   .add({
-    targets: ".ml4 .member-2",
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn,
+    targets: ".animate .member-2",
+    opacity: animate.opacityIn,
+    scale: animate.scaleIn,
+    duration: animate.durationIn,
   })
   .add({
-    targets: ".ml4 .member-2",
+    targets: ".animate .member-2",
     opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
+    scale: animate.scaleOut,
+    duration: animate.durationOut,
     easing: "easeInExpo",
-    delay: ml4.delay,
+    delay: animate.delay,
   })
   .add({
-    targets: ".ml4 .member-3",
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn,
+    targets: ".animate .member-3",
+    opacity: animate.opacityIn,
+    scale: animate.scaleIn,
+    duration: animate.durationIn,
   })
   .add({
-    targets: ".ml4 .member-3",
+    targets: ".animate .member-3",
     opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
+    scale: animate.scaleOut,
+    duration: animate.durationOut,
     easing: "easeInExpo",
-    delay: ml4.delay,
+    delay: animate.delay,
   })
   .add({
-    targets: ".ml4 .member-4",
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn,
+    targets: ".animate .member-4",
+    opacity: animate.opacityIn,
+    scale: animate.scaleIn,
+    duration: animate.durationIn,
   })
   .add({
-    targets: ".ml4 .member-4",
+    targets: ".animate .member-4",
     opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
+    scale: animate.scaleOut,
+    duration: animate.durationOut,
     easing: "easeInExpo",
-    delay: ml4.delay,
+    delay: animate.delay,
   })
   .add({
-    targets: ".ml4 .member-5",
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn,
+    targets: ".animate .member-5",
+    opacity: animate.opacityIn,
+    scale: animate.scaleIn,
+    duration: animate.durationIn,
   })
   .add({
-    targets: ".ml4 .member-5",
+    targets: ".animate .member-5",
     opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
+    scale: animate.scaleOut,
+    duration: animate.durationOut,
     easing: "easeInExpo",
-    delay: ml4.delay,
+    delay: animate.delay,
   })
   .add({
-    targets: ".ml4 .member-6",
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn,
+    targets: ".animate .member-6",
+    opacity: animate.opacityIn,
+    scale: animate.scaleIn,
+    duration: animate.durationIn,
   })
   .add({
-    targets: ".ml4 .member-6",
+    targets: ".animate .member-6",
     opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
+    scale: animate.scaleOut,
+    duration: animate.durationOut,
     easing: "easeInExpo",
-    delay: ml4.delay,
+    delay: animate.delay,
   })
   .add({
-    targets: ".ml4 .member-7",
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn,
+    targets: ".animate .member-7",
+    opacity: animate.opacityIn,
+    scale: animate.scaleIn,
+    duration: animate.durationIn,
   })
   .add({
-    targets: ".ml4 .member-7",
+    targets: ".animate  .member-7",
     opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
+    scale: animate.scaleOut,
+    duration: animate.durationOut,
     easing: "easeInExpo",
-    delay: ml4.delay,
+    delay: animate.delay,
   })
   .add({
-    targets: ".ml4 .member-8",
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn,
+    targets: ".animate  .member-8",
+    opacity: animate.opacityIn,
+    scale: animate.scaleIn,
+    duration: animate.durationIn,
   })
   .add({
-    targets: ".ml4 .member-8",
+    targets: ".animate  .member-8",
     opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
+    scale: animate.scaleOut,
+    duration: animate.durationOut,
     easing: "easeInExpo",
-    delay: ml4.delay,
+    delay: animate.delay,
   })
   .add({
-    targets: ".ml4",
+    targets: ".animate ",
     opacity: 0,
     duration: 500,
     delay: 500,
   });
 
+//Collapse Content
 var coll = document.getElementsByClassName("collapsible");
 var i;
 

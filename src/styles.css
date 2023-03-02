@@ -35,7 +35,12 @@ img {
   width: 90%;
   height: auto;
 }
-.container {
+img.profile {
+  border-radius: 50%;
+  width: 15%;
+  height: auto;
+}
+.menu-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -54,6 +59,10 @@ img {
   position: relative;
   overflow: hidden;
   width: 100%;
+}
+.container {
+  display: grid;
+  gap: 10px;
 }
 .responsive-iframe {
   position: absolute;
@@ -86,7 +95,7 @@ img {
 .content-info {
   margin: 10px 40px;
 }
-#topButton {
+#toTopButton {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -101,10 +110,10 @@ img {
   border-radius: 10px;
   font-size: 26px;
 }
-#topButton:hover {
+#toTopButton:hover {
   background-color: rgba(170, 168, 168, 0.8);
 }
-.ml4 {
+.animate {
   font-family: Gloock;
   color: #f3eaea;
   position: relative;
@@ -143,6 +152,7 @@ img {
 .overlay {
   text-align: center;
 }
+
 .collapsible {
   font-family: Montserrat;
   background-color: #135d6049;
@@ -176,4 +186,7 @@ img {
 
 .active:after {
   content: "\2796";
+}
+.external-link {
+  text-decoration: none;
 }
